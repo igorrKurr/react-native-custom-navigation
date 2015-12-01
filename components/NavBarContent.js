@@ -1,6 +1,7 @@
 'use strict';
 
 var React = require('react-native');
+const { Dimensions } = React;
 var TimerMixin = require('react-timer-mixin');
 
 var {
@@ -58,7 +59,7 @@ var NavbarBackground = React.createClass({
   }
 });
 
-var screen = require('Dimensions').get('window');
+var screen = Dimensions.get('window');
 var NavBarContent = React.createClass({
   mixins: [TimerMixin],
 
